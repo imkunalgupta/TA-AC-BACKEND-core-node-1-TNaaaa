@@ -13,7 +13,7 @@ var buff2 = Buffer.allocUnsafe(12);
 buff1.write('node.js, Node Assignment');
 console.log(buff1.toString());
 
-readFileSync('./app.js');
+var sync = readFileSync('./app.js');
 readFile('./app.js', (err, content) => {
   console.log(err, content.toString());
 });
