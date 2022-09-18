@@ -1,17 +1,17 @@
-function areaSquare(a) {
+function square(a) {
   return a * a;
 }
 
-function areaRectangle(l, w) {
-  return l * w;
+function rectangle(a, b) {
+  return a * b;
 }
 
-function areaCircle(r) {
-  return (22 / 7) * r * r;
+function circle(r) {
+  return 2 * 3.14 * r;
 }
 
 module.exports = {
-  areaSquare: areaSquare,
-  areaRectangle: areaRectangle,
-  areaCircle: areaCircle,
+  square: square,
+  rectangle: rectangle,
+  circle: circle,
 };
