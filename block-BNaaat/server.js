@@ -6,9 +6,8 @@ function handleRequest(req, res) {
   if (req.method === 'GET' && req.url === '/file') {
     res.setHeader('Content-Type', 'text/html');
     fs.readFile('./node.html', (err, content) => {
-      if (err) {
-        console.log(err);
-      }
+      if (err) console.log(err);
+      console.log(content);
       res.end(content);
     });
   } else if (req.method === 'GET' && req.url === '/stream') {
