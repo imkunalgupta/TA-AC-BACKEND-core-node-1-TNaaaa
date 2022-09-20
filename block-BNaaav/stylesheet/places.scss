@@ -1,0 +1,42 @@
+.container4{
+	max-width: 1100px;
+	margin: 0 auto;
+    padding: 32px;
+}
+.places-img{
+    box-shadow: 0.01rem 0.01rem 0.3rem 0.01rem rgba(0,0,0,0.3);
+}
+.places-img img{
+ height: auto;
+ image-rendering: auto;
+}
+.places-article{
+   color: black;
+   box-shadow: 0.01rem 0.01rem 0.3rem 0.01rem rgba(0,0,0,0.3);
+   text-align: justify;
+   font-size: 18px;
+   padding: 12px;
+   &:hover{
+    background-color: $six;
+    color: white;
+   }
+  
+}
+
+.place-info{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1.3fr 3fr;
+}
+.info strong{
+    font-size: 22px;
+    color: blue;
+}
+.info p{
+    font-size: 18px;
+}
+.info h3{
+    font-size: 24px;
+    color: $six;
+    padding-top: 8px;
+}
