@@ -1,0 +1,53 @@
+.footer {
+    float: left;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $five;
+    padding-top: 6px;
+    background-color: #34ADFF;
+    background-image: -webkit-linear-gradient(150deg, #9297d6 65%, #333 35%);
+    box-shadow: 0px 1px 20px rgb(0 0 0 / 52%);
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    padding: 0 16px;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 3rem;
+    color: $four;
+}
+.copyright{
+	color: $five;
+}
+.copyright small{
+	color: $five;
+}
+footer .container{
+    border: none;
+}
+.footer-icon i{
+    font-size: 2rem;
+	color: $six;
+	margin-left: 0.5rem;
+}
+.footer-icon i:hover{
+    background-color: rgb(223, 238, 90);
+}
+
+.fixed-button{
+    color: antiquewhite;
+	margin: 3rem;
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3rem;
+	width: 3rem;
+	background-color: $six
+    
+}
