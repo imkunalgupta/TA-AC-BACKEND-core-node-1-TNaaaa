@@ -1,0 +1,113 @@
+$five: rgb(240, 229, 236);
+$two: #7e857d;
+$three: #ae7bf0;
+$four: #161616;
+$bgcolor: aliceblue;
+$six: #3a4a4f;
+$seven: rgb(204, 24, 24);
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.5;
+    background-color: $bgcolor;
+    
+}
+
+.container{
+    max-width: 1420px;
+    margin: 12px;
+    padding: 24px 32px;
+    border: $two solid;
+}
+
+img {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.justify {
+    justify-content: flex-start;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    margin-left: 8px;
+    padding: 0 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    &:hover{
+        background-color: $six;
+        color: $two;
+        border-radius: 5px;
+        padding: 8px;
+    }
+}
+
+.btn {
+    margin-top: 3rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 1.5rem;
+    color: $four;
+}
+
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    color: $six;
+    margin-top: 90px;
+    
+}
+
+$heading: 1;
+@while $heading <=6 {
+    h#{$heading} {
+        font-size: 2rem - ($heading * 0.25rem);
+    }
+    $heading: $heading + 1;
+}
+
+.header img{
+    padding: 0 1rem;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+}
+
+.menu {
+    float: left;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $five;
+    padding-top: 10px;
+    background-color: #34ADFF;
+    background-image: -webkit-linear-gradient(150deg, #9297d6 65%, #333 35%);
+    box-shadow: 0px 1px 20px rgb(0 0 0 / 52%);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0px;
+}
+
